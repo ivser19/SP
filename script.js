@@ -1,82 +1,114 @@
 // Задание 1
-let a = 10;
-a = 20;
-alert(a);
+let password = 'Пароль';
+let enterPassword = prompt('Введите пароль');
+
+if (password === 'Пароль') {
+  alert('Пароль введен верно')
+} else {
+  alert('Пароль введен неправильно')
+}
 
 // Задание 2
-const year = 2007;
-alert(year);
+let cNumber = Number(prompt('Введите число'));
+let c = 5;
+
+if (c > 0 && c < 10) {
+    alert('Верно')
+} else if ((c < 0 && c > 10)) {
+    alert('Неверно')
+}
 
 // Задание 3
-const JSname = 'Brendan Eich';
-alert(JSname);
+let d = 1, e = 9;
+
+if (d > 100 || e > 100) {
+    alert('Верно')
+} else {
+    alert('Неверно')
+}
 
 // Задание 4
-let x = 10, y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
+let a = '2';
+let b = '3';
+
+a = Number(2);
+b = Number(3);
+
+alert(a + b);
 
 // Задание 5
-let x1 = 2;
-Result = x1 ** 5;
-alert(Result);
+let monthNumber = Number(prompt(`Введите номер месяца`));
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        alert('Зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        alert('Весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        alert('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        alert('Осень');
+        break;
+
+    default: alert('Такого месяца не существует')
+    break; 
+}
 
 // Задание 6
-let a1 = 9, b = 2;
-Result = a1 % b;
-alert(Result);
+...
 
 // Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+let randomNumber = prompt('Пожалуйста, введите любое число');
+let x = Number;
+
+if (typeof num === 'number' && x % 2) {
+    alert(num, 'Число четное');
+} else {
+    alert(Number.isNaN(num), 'Число нечетное');
+}
 
 // Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
+let clientOS = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
+console.log(clientOS);
 
-// Задание 9.0
-let user = {
-    name: "Qwe",
-    age: 30,
-    isAdmin: true,
-};
-
-// Задание 9.1
-user.сityOfresidence = "Moscow";
-
-// Задание 9.2
-user.age = 27;
-
-// Задание 9.3
-delete user.сityOfresidence;
-
-// Задание 9.3
-let info = prompt(`Какую информацию хотите узнать о пользователе?`, `name`);
-alert(user[info]);
-
-// Задание 10
-let name = prompt('Введите ваше имя');
-alert(`Привет, ${name}!`);
-
-
-
-
-
-
-
-
-// Задание 2
-const c = 19;
-if(c > 3) {
-    alert('Больше');
+if (clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке');
 } else {
-    alert('Меньше');
+    alert('Установите версию приложения для Android по ссылке');
 }
+
+// Задание 9
+let clientOS = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
+console.log(clientOS);
+const deviceYear = 2015;
+let clientDeviceYear = Number(prompt('Введите год выпуска вашей модели устройства в формате "ГГГГ"'));
+console.log(clientDeviceYear);
+switch (clientOS) {
+    case 0:
+        if (clientDeviceYear >= deviceYear) {
+            alert('Установите версию приложения для iOS по ссылке');
+        } else {
+            alert('Установите версию приложения для Android по ссылке');
+        }
+        break;
+    case 1:
+        if (clientDeviceYear <= deviceYear) {
+            alert('Установите облегченную версию приложения для iOS по ссылке');
+        } else {
+            alert('Установите облегченную версию приложения для Android по ссылке');
+        }
+        break;
+    default: alert('Введено неверное значение');
+    break;
+}
+
