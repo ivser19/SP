@@ -54,7 +54,7 @@ a {
   justify-content: space-around;
   color: #FFFFFF;
 }
-.top__button__button:hover {
+.top__button:hover {
   cursor: url(img/cursor.svg), pointer;
   border: 3px solid #44D2FF;
   border-radius: 18px;
