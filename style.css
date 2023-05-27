@@ -200,6 +200,64 @@ a {
   grid-column: span 5;
 }
 
+.container {
+  padding-top: 270px;
+  padding-bottom: 270px;
+  background-image: url(img/container_bgi.jpg);
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+.container__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: white;
+}
+.container__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+.container__button {
+  width: 234.06px;
+  height: 48.6px;
+  left: 0px;
+  top: 187px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+  background-color: #000915;
+  justify-content: center;
+}
+.footer__text {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+}
+
 @media (max-width: 376px) {
   .center {
     padding-left: 16px;
@@ -376,5 +434,61 @@ a {
   }
   .section__game_img {
     height: 236px;
+  }
+  .container {
+    padding-top: 51px;
+    padding-bottom: 487px;
+    background-image: url(img/container_bgi.jpg);
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: white;
+  }
+  .container__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+  }
+  .container__button {
+    width: 234.06px;
+    height: 48.6px;
+    left: 0px;
+    top: 187px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+    background-color: #000915;
+    justify-content: center;
+  }
+  .footer__text {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */
