@@ -1,114 +1,58 @@
-// Задание 1
-let password = 'Пароль';
-let enterPassword = prompt('Введите пароль');
+// Задание N 1
 
-if (password === 'Пароль') {
-  alert('Пароль введен верно')
-} else {
-  alert('Пароль введен неправильно')
+let i = 0;
+
+while (i < 2) {
+  console.log("Привет");
+  i++;
 }
 
-// Задание 2
-let cNumber = Number(prompt('Введите число'));
-let c = 5;
+// Задание N 2
 
-if (c > 0 && c < 10) {
-    alert('Верно')
-} else if ((c < 0 && c > 10)) {
-    alert('Неверно')
+let a = 1;
+while (a <= 25) {
+  console.log(a);
+  a++;
 }
 
-// Задание 3
-let d = 1, e = 9;
+// Задание N 3
 
-if (d > 100 || e > 100) {
-    alert('Верно')
-} else {
-    alert('Неверно')
+let b = 7;
+while (b <= 22) {
+  console.log(b);
+  b++;
 }
 
-// Задание 4
-let a = '2';
-let b = '3';
+// Задание N 4
 
-a = Number(2);
-b = Number(3);
+const object = { 'Коля': 200, 'Вася': 300, 'Петя': 400 };
 
-alert(a + b);
-
-// Задание 5
-let monthNumber = Number(prompt(`Введите номер месяца`));
-switch (monthNumber) {
-    case 12:
-    case 1:
-    case 2:
-        alert('Зима');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        alert('Весна');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        alert('Лето');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        alert('Осень');
-        break;
-
-    default: alert('Такого месяца не существует')
-    break; 
+for (const property in object) {
+  console.log(`${property}- зарплата ${object[property]} долларов`);
 }
 
-// Задание 6
-...
+// Задание N 5
 
-// Задание 7
-let randomNumber = prompt('Пожалуйста, введите любое число');
-let x = Number;
+let n = 1000;
+let num = 0;
 
-if (typeof num === 'number' && x % 2) {
-    alert(num, 'Число четное');
-} else {
-    alert(Number.isNaN(num), 'Число нечетное');
+while (n > 50) { num++; n /= 2; }
+console.log(n);
+console.log(num);
+
+// Задание N 6
+let dayMonth = 31, day = Number(5);
+
+while (dayMonth < 32 && dayMonth > 0) {
+  if (dayMonth < 32 && dayMonth > 0 && day != 5) {
+    console.log('');
+  } else if (dayMonth < 32 && dayMonth > 0 && day === 5) {
+    console.log('Сегодня пятница, 5-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 7) {
+    console.log('Сегодня пятница, 12-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 14) {
+    console.log('Сегодня пятница, 19-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 21) {
+    console.log('Сегодня пятница, 26-е число. Необходимо подготовить отчет.');
+  } break;
 }
-
-// Задание 8
-let clientOS = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
-console.log(clientOS);
-
-if (clientOS === 0) {
-    alert('Установите версию приложения для iOS по ссылке');
-} else {
-    alert('Установите версию приложения для Android по ссылке');
-}
-
-// Задание 9
-let clientOS = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
-console.log(clientOS);
-const deviceYear = 2015;
-let clientDeviceYear = Number(prompt('Введите год выпуска вашей модели устройства в формате "ГГГГ"'));
-console.log(clientDeviceYear);
-switch (clientOS) {
-    case 0:
-        if (clientDeviceYear >= deviceYear) {
-            alert('Установите версию приложения для iOS по ссылке');
-        } else {
-            alert('Установите версию приложения для Android по ссылке');
-        }
-        break;
-    case 1:
-        if (clientDeviceYear <= deviceYear) {
-            alert('Установите облегченную версию приложения для iOS по ссылке');
-        } else {
-            alert('Установите облегченную версию приложения для Android по ссылке');
-        }
-        break;
-    default: alert('Введено неверное значение');
-    break;
-}
-
