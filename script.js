@@ -1,82 +1,58 @@
-// Задание 1
-let a = 10;
-a = 20;
-alert(a);
+// Задание N 1
 
-// Задание 2
-const year = 2007;
-alert(year);
+let i = 0;
 
-// Задание 3
-const JSname = 'Brendan Eich';
-alert(JSname);
+while (i < 2) {
+  console.log("Привет");
+  i++;
+}
 
-// Задание 4
-let x = 10, y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
+// Задание N 2
 
-// Задание 5
-let x1 = 2;
-Result = x1 ** 5;
-alert(Result);
+let a = 1;
+while (a <= 25) {
+  console.log(a);
+  a++;
+}
 
-// Задание 6
-let a1 = 9, b = 2;
-Result = a1 % b;
-alert(Result);
+// Задание N 3
 
-// Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+let b = 7;
+while (b <= 22) {
+  console.log(b);
+  b++;
+}
 
-// Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
+// Задание N 4
 
-// Задание 9.0
-let user = {
-    name: "Qwe",
-    age: 30,
-    isAdmin: true,
-};
+const object = { 'Коля': 200, 'Вася': 300, 'Петя': 400 };
 
-// Задание 9.1
-user.сityOfresidence = "Moscow";
+for (const property in object) {
+  console.log(`${property}- зарплата ${object[property]} долларов`);
+}
 
-// Задание 9.2
-user.age = 27;
+// Задание N 5
 
-// Задание 9.3
-delete user.сityOfresidence;
+let n = 1000;
+let num = 0;
 
-// Задание 9.3
-let info = prompt(`Какую информацию хотите узнать о пользователе?`, `name`);
-alert(user[info]);
+while (n > 50) { num++; n /= 2; }
+console.log(n);
+console.log(num);
 
-// Задание 10
-let name = prompt('Введите ваше имя');
-alert(`Привет, ${name}!`);
+// Задание N 6
+let dayMonth = 31, day = Number(5);
 
-
-
-
-
-
-
-
-// Задание 2
-const c = 19;
-if(c > 3) {
-    alert('Больше');
-} else {
-    alert('Меньше');
+while (dayMonth < 32 && dayMonth > 0) {
+  if (dayMonth < 32 && dayMonth > 0 && day != 5) {
+    console.log('');
+  } else if (dayMonth < 32 && dayMonth > 0 && day === 5) {
+    console.log('Сегодня пятница, 5-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 7) {
+    console.log('Сегодня пятница, 12-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 14) {
+    console.log('Сегодня пятница, 19-е число. Необходимо подготовить отчет.');
+  } else if (dayMonth < 32 && dayMonth > 0 && day + 21) {
+    console.log('Сегодня пятница, 26-е число. Необходимо подготовить отчет.');
+  } break;
 }
