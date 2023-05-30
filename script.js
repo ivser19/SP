@@ -1,82 +1,142 @@
 // Задание 1
-let a = 10;
-a = 20;
-alert(a);
 
-// Задание 2
-const year = 2007;
-alert(year);
+function min(a, b) {
+    if (a < b) {
+      return a;
+    } else {
+      return b;
+    }
+  }
 
-// Задание 3
-const JSname = 'Brendan Eich';
-alert(JSname);
+  console.log(min(8, 4))
+
+  // Задание 2
+
+    function num(number) {
+
+    let result    
+    if (number % 2 == 0){
+        return console.log('Число четное');
+    }
+    else {
+        return console.log('Число нечетное');
+    }
+
+    }
+
+ // Задание 3.1
+ 
+ function pow(x, n) {
+
+    let pow = x ** n;
+    let x = Number;
+    let n = 2;
+    let result = x;
+     console.log(pow);
+  }
+  
+
+// Задание 3.2
+
+function pow(x, n) {
+
+    let pow = x ** n;
+    let x = Number;
+    let n = 2;
+    let result = x;
+    return result;
+  }
 
 // Задание 4
-let x = 10, y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
+
+
+    let age = Number(prompt('Сколько вам лет?'));
+    
+    function ageCheck(age) {
+    if (age < 0 ) {
+        alert('Вы ввели неправильное значение')
+    } else if (age > 0 && age < 12) {
+        alert('Привет, друг!')
+    } else  (age > 0 && age > 13) ;{
+        alert('Добро пожаловать!')
+    }
+}
 
 // Задание 5
-let x1 = 2;
-Result = x1 ** 5;
-alert(Result);
+
+function mult(c, d) {
+
+    let result = c * d;
+    if (c = isNaN, d = isNaN) {
+        console.log(result);
+    } else (c = isNaN, d != isNaN || c != isNaN, d = isNaN) ;{
+        console.log('Одно или оба значения не являются числом')
+    }
+}
 
 // Задание 6
-let a1 = 9, b = 2;
-Result = a1 % b;
-alert(Result);
+
+function numberA(Number) {
+
+    let cube = Number * Number * Number ;
+    alert('Введите число');
+    if (Number = isNaN) {
+        console.log('n в кубе равняется ${cube}');
+    } else (Number != isNaN) {
+        console.log( 'Переданный параметр не является числом')
+    }
+}
 
 // Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
 
-// Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
-
-// Задание 9.0
-let user = {
-    name: "Qwe",
-    age: 30,
-    isAdmin: true,
+const circle1 = { 
+    radius: 5, 
+    p: 3.14,
+    getArea() {
+        return getArea
+    },
+    getPerimeter() {
+        return getPerimeter
+    }
 };
 
-// Задание 9.1
-user.сityOfresidence = "Moscow";
+const circle2 = { 
+    radius: 5, 
+    p: 3.14,
+    getArea() {
+        return getArea
+    },
+    getPerimeter() {
+        return getPerimeter
+    }
+};
 
-// Задание 9.2
-user.age = 27;
+let getArea = p * (radius * radius);
+let getPerimeter = 2 * p * radius;
 
-// Задание 9.3
-delete user.сityOfresidence;
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
 
-// Задание 9.3
-let info = prompt(`Какую информацию хотите узнать о пользователе?`, `name`);
-alert(user[info]);
+// Задание 8
 
-// Задание 10
-let name = prompt('Введите ваше имя');
-alert(`Привет, ${name}!`);
+function month(monthNumber) {
 
+    prompt('Введите номер месяца');
 
+    let monthNumber = isNaN;
 
-
-
-
-
-
-// Задание 2
-const c = 19;
-if(c > 3) {
-    alert('Больше');
-} else {
-    alert('Меньше');
+    if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+        console.log('Зима');
+    } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
+        console.log('Весна');
+    } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
+        console.log('Лето');
+    } else (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
+        console.log('Осень');
+    }
 }
+
+
+
+
+
