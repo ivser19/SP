@@ -1,142 +1,106 @@
 // Задание 1
 
-function min(a, b) {
-    if (a < b) {
-      return a;
-    } else {
-      return b;
-    }
-  }
+const numbs = [1, 5, 4, 10, 0, 3];
 
-  console.log(min(8, 4))
+for (let i = 0; i < numbs.length; i++) {
+	if (numbs[i] == 10) break;
+	console.log(numbs[i]);
+} 
 
-  // Задание 2
+// Задание 2
 
-    function num(number) {
+const numbs1 = [1, 5, 4, 10, 0, 3];
 
-    let result    
-    if (number % 2 == 0){
-        return console.log('Число четное');
-    }
-    else {
-        return console.log('Число нечетное');
-    }
+for (let elem of numbs1) { 
+if (numbs1[elem] === 4) { 
+console.log(elem); 
+}
+}
 
-    }
+// Задание 3
 
- // Задание 3.1
- 
- function pow(x, n) {
+const numbs2 = [1, 3, 5, 10, 20];
 
-    let pow = x ** n;
-    let x = Number;
-    let n = 2;
-    let result = x;
-     console.log(pow);
-  }
-  
-
-// Задание 3.2
-
-function pow(x, n) {
-
-    let pow = x ** n;
-    let x = Number;
-    let n = 2;
-    let result = x;
-    return result;
-  }
+console.log(numbs2);
+numbs2 = numbs2.join(' ');
 
 // Задание 4
 
-
-    let age = Number(prompt('Сколько вам лет?'));
-    
-    function ageCheck(age) {
-    if (age < 0 ) {
-        alert('Вы ввели неправильное значение')
-    } else if (age > 0 && age < 12) {
-        alert('Привет, друг!')
-    } else  (age > 0 && age > 13) ;{
-        alert('Добро пожаловать!')
-    }
-}
+const numbs3 = [
+    [1, 1, 1], 
+    [1, 1, 1], 
+    [1, 1, 1],
+]
 
 // Задание 5
 
-function mult(c, d) {
+const numbs4 = [1, 1, 1]
 
-    let result = c * d;
-    if (c = isNaN, d = isNaN) {
-        console.log(result);
-    } else (c = isNaN, d != isNaN || c != isNaN, d = isNaN) ;{
-        console.log('Одно или оба значения не являются числом')
-    }
-}
+numbs4.push(2, 2, 2);
+console. log(numbs4);
 
 // Задание 6
 
-function numberA(Number) {
+const arr = [9, 8, 7, 'a', 6, 5]
 
-    let cube = Number * Number * Number ;
-    alert('Введите число');
-    if (Number = isNaN) {
-        console.log('n в кубе равняется ${cube}');
-    } else (Number != isNaN) {
-        console.log( 'Переданный параметр не является числом')
-    }
-}
+let removed = arr.splice(3);
+console.log(removed);
 
 // Задание 7
 
-const circle1 = { 
-    radius: 5, 
-    p: 3.14,
-    getArea() {
-        return getArea
-    },
-    getPerimeter() {
-        return getPerimeter
-    }
-};
+const rndm = [9, 8, 7, 6, 5]
 
-const circle2 = { 
-    radius: 5, 
-    p: 3.14,
-    getArea() {
-        return getArea
-    },
-    getPerimeter() {
-        return getPerimeter
-    }
-};
-
-let getArea = p * (radius * radius);
-let getPerimeter = 2 * p * radius;
-
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
+let rndmNumber = prompt('Введите число');
+let search = rndmNumber.includes (9, 8, 7, 6, 5);
+console.log(search);
 
 // Задание 8
+const word = ['abcdef']
 
-function month(monthNumber) {
+word[0] = 'fedcba';
+console.log(word);
 
-    prompt('Введите номер месяца');
+// Задание 9
 
-    let monthNumber = isNaN;
+const rndM = [
+    [1, 2, 3,],
+    [4, 5, 6],
+]
 
-    if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
-        console.log('Зима');
-    } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
-        console.log('Весна');
-    } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
-        console.log('Лето');
-    } else (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
-        console.log('Осень');
-    }
+const rndMarray= rndM.concat(rndM1, rndM2, ...);
+
+console.log(rndMarray);
+
+// Задание 10
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let result = (item +(i + 1));
+for (const item of array) {
+    console.log(result);
 }
 
+// Задание 11
 
+function sumArray(newArr) {
+    let newArr = [];
+    let mult = newArr.map(item * item);
+  
+    arr.forEach((item) => {
+      newArr.push(mult);
+    })
+    return newArr;
+  }
 
+// Задание 12
 
+const getLength = source => source.map(str => str.length);
 
+console.log(getLength(['one', 'sound', 'underground']));
+
+// Задание 13
+
+function filterPositive(NNumbers) {
+    const NNumbers = [ ];
+    const resultN = NNumbers.filter(NNumbers === isNaN && NNumbers < 0);
+  }
+console.log(result);

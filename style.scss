@@ -160,6 +160,12 @@
                 justify-content: space-around;
                 color: #FFFFFF;
             }
+
+            &__button:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 3px solid #44D2FF;
+                border-radius: 18px;
+            }
         }
 
         &__game_img {
@@ -216,6 +222,12 @@
                 justify-content: space-around;
                 color: #FFFFFF;
             }
+
+            &__button:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 3px solid #44D2FF;
+                border-radius: 18px;
+            }
         }
 
         &__game_img {
@@ -265,6 +277,12 @@
                 align-items: center;
                 justify-content: space-around;
                 color: #FFFFFF;
+            }
+
+            &__button:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 3px solid #44D2FF;
+                border-radius: 18px;
             }
     }
 

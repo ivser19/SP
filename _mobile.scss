@@ -42,6 +42,12 @@
             margin-right: 70px;
             margin-left: 60px;
             }
+
+            &__button:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 2px solid #44D2FF;
+                border-radius: 10px;
+            }
     }
 
     .menu {
@@ -84,6 +90,12 @@
             color: white;
             padding-top: 236px;
             padding-left: 32px;
+            }
+
+            &__game_link:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 3px solid #44D2FF;
+                border-radius: 18px;
             }
         }
     
@@ -135,6 +147,12 @@
                     align-items: center;
                     justify-content: space-around;
                     color: #FFFFFF;
+                }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
                 }
             }
 
@@ -192,6 +210,12 @@
                     justify-content: space-around;
                     color: #FFFFFF;
                 }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
+                }
             }
     
             &__game_img {
@@ -241,6 +265,12 @@
                     align-items: center;
                     justify-content: space-around;
                     color: #FFFFFF;
+                }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
                 }
         }
     
