@@ -42,6 +42,12 @@
             margin-right: 70px;
             margin-left: 60px;
             }
+
+            &__button:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 2px solid #44D2FF;
+                border-radius: 10px;
+            }
     }
 
     .menu {
@@ -85,6 +91,207 @@
             padding-top: 236px;
             padding-left: 32px;
             }
+
+            &__game_link:hover {
+                cursor: url(img/cursor.svg), pointer;
+                border: 3px solid #44D2FF;
+                border-radius: 18px;
+            }
         }
     
+
+     .box {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        background-color: rgba(0, 9, 21, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+            
+            &__game {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+    
+                &_title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: white;
+                }
+    
+                &_text {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: white;
+                    text-align: center;
+                }
+    
+                &_button {
+                    width: 234.06px;
+                    height: 48.6px;
+                    left: 0px;
+                    top: 187px;
+                    background: #9C0332;
+                    border-radius: 30px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    color: #FFFFFF;
+                }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
+                }
+            }
+
+            &__img {
+                height: 236px;
+            }
+        }
+
+        .section {
+            padding-top: 51px;
+            padding-bottom: 85px;
+            background-color: rgba(0, 9, 21, 1);
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 64px;
+            
+
+            &__game {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+    
+                &_title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: white;
+                }
+    
+                &_text {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: white;
+                    text-align: center;
+                }
+    
+                &_button {
+                    width: 234.06px;
+                    height: 48.6px;
+                    left: 0px;
+                    top: 187px;
+                    background: #9C0332;
+                    border-radius: 30px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    color: #FFFFFF;
+                }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
+                }
+            }
+    
+            &__game_img {
+                height: 236px;
+                }
+            
+        }
+
+        .container {
+            padding-top: 51px;
+            padding-bottom: 487px;
+            background-image: url(img/container_bgi.jpg);
+            display: flex;
+            gap: 32px;
+            flex-direction: column;
+            align-items: center;
+    
+                &__title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: white;
+                }
+    
+                &__text {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: white;
+                }
+    
+                &__button {
+                    width: 234.06px;
+                    height: 48.6px;
+                    left: 0px;
+                    top: 187px;
+                    background: #9C0332;
+                    border-radius: 30px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    color: #FFFFFF;
+                }
+
+                &__button:hover {
+                    cursor: url(img/cursor.svg), pointer;
+                    border: 2px solid #44D2FF;
+                    border-radius: 10px;
+                }
+        }
+    
+        .footer {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgba(184, 212, 255, 0.2);
+            background-color: #000915;
+            justify-content: center;    
+            
+    
+            &__text {
+                margin-top: 32px;
+                margin-bottom: 32px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: white;
+                
+            }
+        }
+            
 }

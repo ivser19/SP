@@ -1,82 +1,106 @@
 // Задание 1
-let a = 10;
-a = 20;
-alert(a);
+
+const numbs = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < numbs.length; i++) {
+	if (numbs[i] == 10) break;
+	console.log(numbs[i]);
+} 
 
 // Задание 2
-const year = 2007;
-alert(year);
+
+const numbs1 = [1, 5, 4, 10, 0, 3];
+
+for (let elem of numbs1) { 
+if (numbs1[elem] === 4) { 
+console.log(elem); 
+}
+}
 
 // Задание 3
-const JSname = 'Brendan Eich';
-alert(JSname);
+
+const numbs2 = [1, 3, 5, 10, 20];
+
+console.log(numbs2);
+numbs2 = numbs2.join(' ');
 
 // Задание 4
-let x = 10, y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
+
+const numbs3 = [
+    [1, 1, 1], 
+    [1, 1, 1], 
+    [1, 1, 1],
+]
 
 // Задание 5
-let x1 = 2;
-Result = x1 ** 5;
-alert(Result);
+
+const numbs4 = [1, 1, 1]
+
+numbs4.push(2, 2, 2);
+console. log(numbs4);
 
 // Задание 6
-let a1 = 9, b = 2;
-Result = a1 % b;
-alert(Result);
+
+const arr = [9, 8, 7, 'a', 6, 5]
+
+let removed = arr.splice(3);
+console.log(removed);
 
 // Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+
+const rndm = [9, 8, 7, 6, 5]
+
+let rndmNumber = prompt('Введите число');
+let search = rndmNumber.includes (9, 8, 7, 6, 5);
+console.log(search);
 
 // Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
+const word = ['abcdef']
 
-// Задание 9.0
-let user = {
-    name: "Qwe",
-    age: 30,
-    isAdmin: true,
-};
+word[0] = 'fedcba';
+console.log(word);
 
-// Задание 9.1
-user.сityOfresidence = "Moscow";
+// Задание 9
 
-// Задание 9.2
-user.age = 27;
+const rndM = [
+    [1, 2, 3,],
+    [4, 5, 6],
+]
 
-// Задание 9.3
-delete user.сityOfresidence;
+const rndMarray= rndM.concat(rndM1, rndM2, ...);
 
-// Задание 9.3
-let info = prompt(`Какую информацию хотите узнать о пользователе?`, `name`);
-alert(user[info]);
+console.log(rndMarray);
 
 // Задание 10
-let name = prompt('Введите ваше имя');
-alert(`Привет, ${name}!`);
 
-
-
-
-
-
-
-
-// Задание 2
-const c = 19;
-if(c > 3) {
-    alert('Больше');
-} else {
-    alert('Меньше');
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let result = (item +(i + 1));
+for (const item of array) {
+    console.log(result);
 }
+
+// Задание 11
+
+function sumArray(newArr) {
+    let newArr = [];
+    let mult = newArr.map(item * item);
+  
+    arr.forEach((item) => {
+      newArr.push(mult);
+    })
+    return newArr;
+  }
+
+// Задание 12
+
+const getLength = source => source.map(str => str.length);
+
+console.log(getLength(['one', 'sound', 'underground']));
+
+// Задание 13
+
+function filterPositive(NNumbers) {
+    const NNumbers = [ ];
+    const resultN = NNumbers.filter(NNumbers === isNaN && NNumbers < 0);
+  }
+console.log(result);

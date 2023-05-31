@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -14,16 +14,47 @@
 
 <body>
     <div class="top center">
-        <h1 class="top__title">Добро пожаловать<br> на мой сайт !</h1>
-        <p class="top__text">Вам предстоит пройти несколько увлекательных<br> игр. Если готов нажимай <b>поехали</b> и
-            <b>приступай</b></p>
-        <button class="top__button">Поехали!</button>
+                <h1 class="top__title">Добро пожаловать<br> на мой сайт !</h1>
+                <p class="top__text">Вам предстоит пройти несколько увлекательных<br> игр. Если готов нажимай <b>поехали</b> и
+                    <b>приступай</b></p>
+                <button class="top__button" onclick="url(index.html)">Поехали!</button>
+     </div>
+    
+    
+    <div class="menu center ">
+        <div class="menu__game1"><a class="menu__game_link" href="index.html">Игра 1</a></div>
+        <div class="menu__game2"><a class="menu__game_link" href="index.html">Игра 2</a></div>
+        <div class="menu__game3"><a class="menu__game_link" href="index.html">Игра 3</a></div>
     </div>
 
-    <div class="menu center ">
-        <div class="menu__game1"><a class="menu__game_link" href="#">Игра 1</a></div>
-        <div class="menu__game2"><a class="menu__game_link" href="#">Игра 2</a></div>
-        <div class="menu__game3"><a class="menu__game_link" href="#">Игра 3</a></div>
+    <div class="box center">
+        <div class="box__game">
+            <h2 class="box__game_title">Времена года!</h2>
+            <p class="box__game_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="box__game_button"  onclick="url(index.html)">Играть!</button>
+        </div>
+
+        <div class="box__game_img"><img class="box__img" src="img/box_img.svg" alt="game"></div>
+    </div>
+
+    <div class="section center">
+        <div class="section__game_img"><img class="box__img" src="img/box_img2.svg" alt="game"></div>
+
+        <div class="section__game">
+            <h2 class="section__game_title">Запомни слова</h2>
+            <p class="section__game_text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="section__game_button" onclick="url(index.html)">Играть!</button>
+        </div>
+    </div>
+
+    <div class="container center">
+        <h2 class="container__title">Игра в загадки</h2>
+        <p class="container__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <button class="container__button" onclick="url(index.html)">Играть!</button>
+    </div>
+
+    <div class="footer center">
+        <p class="footer__text">Все права защищены</p>
     </div>
 
     <script src="script.js"></script>
